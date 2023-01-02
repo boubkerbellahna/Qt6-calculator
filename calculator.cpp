@@ -113,7 +113,7 @@ void calculator::MathOp()
 
     // Clear display
     ArchVal = displayVal+butVal;
-    ui->label->setText(ArchVal);
+    //ui->label->setText(ArchVal);
     ui->lineEdit->setText("");
 }
 
@@ -156,7 +156,7 @@ void calculator::EqualClick()
 
     // Put solution in display
     ArchVal = ArchVal+displayVal;
-    ui->label->setText(ArchVal);
+    //ui->label->setText(ArchVal);
     ui->lineEdit->setText(QString::number(solution));
 
 }
@@ -165,7 +165,7 @@ void calculator::ClaerDisply()
 {
     calcVal = 0.0;
     DoteStatus = false;
-    ui->label->setText("");
+    //ui->label->setText("");
     ui->lineEdit->setText(QString::number(calcVal));
 }
 

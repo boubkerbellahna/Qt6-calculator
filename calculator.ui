@@ -6,59 +6,44 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>425</width>
-    <height>324</height>
+    <width>424</width>
+    <height>294</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>calculator</string>
   </property>
-  <property name="windowIcon">
-   <iconset resource="res.qrc">
-    <normaloff>:/icons/AppIcon.png</normaloff>:/icons/AppIcon.png</iconset>
-  </property>
   <layout class="QVBoxLayout" name="verticalLayout">
-   <item>
-    <widget class="QLabel" name="label">
-     <property name="font">
-      <font>
-       <pointsize>10</pointsize>
-      </font>
-     </property>
-     <property name="layoutDirection">
-      <enum>Qt::RightToLeft</enum>
-     </property>
-     <property name="text">
-      <string/>
-     </property>
-     <property name="alignment">
-      <set>Qt::AlignBottom|Qt::AlignRight|Qt::AlignTrailing</set>
-     </property>
-    </widget>
-   </item>
-   <item>
-    <widget class="QLabel" name="lineEdit">
-     <property name="font">
-      <font>
-       <pointsize>14</pointsize>
-      </font>
-     </property>
-     <property name="layoutDirection">
-      <enum>Qt::RightToLeft</enum>
-     </property>
-     <property name="text">
-      <string>0</string>
-     </property>
-     <property name="alignment">
-      <set>Qt::AlignBottom|Qt::AlignRight|Qt::AlignTrailing</set>
-     </property>
-    </widget>
-   </item>
    <item>
     <widget class="QSplitter" name="splitter_11">
      <property name="orientation">
       <enum>Qt::Vertical</enum>
      </property>
+     <widget class="QLineEdit" name="lineEdit">
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>49</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>15</pointsize>
+       </font>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::RightToLeft</enum>
+      </property>
+      <property name="text">
+       <string>0.0</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignBottom|Qt::AlignRight|Qt::AlignTrailing</set>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+     </widget>
      <widget class="QSplitter" name="splitter_10">
       <property name="orientation">
        <enum>Qt::Horizontal</enum>
@@ -314,7 +299,7 @@
         </property>
         <property name="font">
          <font>
-          <pointsize>9</pointsize>
+          <pointsize>21</pointsize>
          </font>
         </property>
         <property name="text">
@@ -327,8 +312,6 @@
    </item>
   </layout>
  </widget>
- <resources>
-  <include location="res.qrc"/>
- </resources>
+ <resources/>
  <connections/>
 </ui>
